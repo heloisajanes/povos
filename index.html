@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem Ipsum Dolor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💋</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#inicio">Lorem</a></li>
+      <li><a href="#enredo">Ipsum Dolor</a></li>
+      <li><a href="#personagens">Consectetur</a></li>
+      <li><a href="#temas">Adipiscing Elit</a></li>
+      <li><a href="#autor">Sed Eiusmod</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header / Hero -->
+  <header class="hero" id="inicio">
+    <div class="ink-drops" id="inkDrops"></div>
+
+    <div class="hero-wall">
+      <svg viewBox="0 0 600 500" class="wall-svg" aria-hidden="true">
+        <defs>
+          <pattern id="brick" width="60" height="30" patternUnits="userSpaceOnUse">
+            <rect width="60" height="30" fill="none" stroke="#3a3a3a" stroke-width="1.5" opacity="0.6"/>
+            <line x1="0" y1="15" x2="60" y2="15" stroke="#3a3a3a" stroke-width="1" opacity="0.4"/>
+            <line x1="30" y1="0" x2="30" y2="15" stroke="#3a3a3a" stroke-width="1" opacity="0.4"/>
+            <line x1="0" y1="15" x2="0" y2="30" stroke="#3a3a3a" stroke-width="1" opacity="0.4"/>
+            <line x1="60" y1="15" x2="60" y2="30" stroke="#3a3a3a" stroke-width="1" opacity="0.4"/>
+          </pattern>
+          <radialGradient id="kissGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#cc4b2c" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#cc4b2c" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#1a1a1a"/>
+            <stop offset="100%" stop-color="#0a0a0a"/>
+          </linearGradient>
+        </defs>
+
+        <rect width="600" height="500" fill="url(#wallGrad)"/>
+        <rect width="600" height="500" fill="url(#brick)"/>
+
+        <!-- Crack lines -->
+        <path d="M120 80 L140 130 L130 180 L160 220" stroke="#2d2d2d" stroke-width="1.5" fill="none" opacity="0.5"/>
+        <path d="M450 60 L430 120 L440 170" stroke="#2d2d2d" stroke-width="1.5" fill="none" opacity="0.4"/>
+        <path d="M300 350 L310 400 L290 430" stroke="#2d2d2d" stroke-width="1" fill="none" opacity="0.3"/>
+
+        <!-- The Kiss - painted lips -->
+        <g class="kiss-group">
+          <ellipse cx="300" cy="220" rx="80" ry="50" fill="url(#kissGlow)" opacity="0.4"/>
+          <path class="kiss-upper" d="M260 210 Q280 190 300 205 Q320 190 340 210 Q320 215 300 212 Q280 215 260 210Z" fill="#8b1a1a" opacity="0.85"/>
+          <path class="kiss-lower" d="M260 210 Q270 240 300 245 Q330 240 340 210 Q320 218 300 215 Q280 218 260 210Z" fill="#a32b2b" opacity="0.8"/>
+          <path class="kiss-shine" d="M285 205 Q295 200 300 205" stroke="#cc4b2c" stroke-width="1.5" fill="none" opacity="0.6"/>
+        </g>
+
+        <!-- Hand-drawn scribbles -->
+        <g class="scribbles" opacity="0.15">
+          <path d="M50 350 Q70 340 90 360 Q110 380 130 350" stroke="#d4b87a" stroke-width="1" fill="none"/>
+          <path d="M400 400 Q430 380 460 410 Q490 440 520 400" stroke="#d4b87a" stroke-width="1" fill="none"/>
+          <path d="M180 380 Q200 370 220 390" stroke="#d4b87a" stroke-width="1" fill="none"/>
+        </g>
+      </svg>
+
+      <div class="hero-text">
+        <h1 class="hero-title">Lorem<br><span>Ipsum Dolor</span></h1>
+        <p class="hero-subtitle">Consectetur Adipiscing</p>
+        <p class="hero-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."</p>
+        <a href="#enredo" class="btn-scroll">Tempor</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== INÍCIO / RESUMO ===== -->
+  <section class="section fade-section" id="resumo">
+    <div class="container">
+      <h2 class="section-title">Lorem</h2>
+      <div class="resumo-content">
+        <div class="resumo-text">
+          <p class="texto-literario">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p class="texto-literario">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          </p>
+          <p class="texto-literario">
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+          </p>
+          <p class="texto-literario">
+            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ===== TIMELINE / ENREDO ===== -->
+<section class="section fade-section" id="enredo">
+  <div class="container">
+    <h2 class="section-title">Lorem Ipsum</h2>
+    <p class="section-subtitle">Dolor sit amet consectetur adipiscing</p>
+
+    <div class="timeline">
+      <div class="timeline-line" id="timelineLine"></div>
+
+      <div class="timeline-item left fade-slide" data-year="1994">
+        <div class="timeline-marker">
+          <svg viewBox="0 0 40 40" class="timeline-icon" aria-hidden="true">
+            <circle cx="20" cy="20" r="18" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+            <circle cx="20" cy="20" r="8" fill="#cc4b2c" opacity="0.6"/>
+            <path d="M12 28 L20 8 L28 28" stroke="#d4b87a" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <text x="20" y="24" text-anchor="middle" fill="#d4b87a" font-size="10" font-family="Inter">Lorem</text>
+          </svg>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-year">Lorem</div>
+          <h3>Lorem Ipsum — Dolor Sit Amet</h3>
+          <p class="texto-literario">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <div class="timeline-icon-extras">
+            <svg viewBox="0 0 60 40" class="city-svg" aria-hidden="true">
+              <path d="M0 40 L0 25 L8 25 L8 15 L16 15 L16 25 L24 25 L24 5 L32 5 L32 25 L40 25 L40 30 L48 30 L48 20 L56 20 L56 30 L60 30 L60 40 Z" fill="#2d2d2d" opacity="0.6"/>
+              <path d="M10 40 Q20 20 30 35 Q40 18 50 35 Q55 25 60 32" fill="none" stroke="#d4b87a" stroke-width="0.8" opacity="0.4"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right fade-slide" data-year="1995">
+        <div class="timeline-marker">
+          <svg viewBox="0 0 40 40" class="timeline-icon" aria-hidden="true">
+            <circle cx="20" cy="20" r="18" fill="none" stroke="#8b1a1a" stroke-width="2"/>
+            <path d="M14 14 L26 26 M26 14 L14 26" stroke="#8b1a1a" stroke-width="2"/>
+            <text x="20" y="24" text-anchor="middle" fill="#d4b87a" font-size="10" font-family="Inter">Ipsum</text>
+          </svg>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-year">Ipsum</div>
+          <h3>Consectetur — Adipiscing Elit</h3>
+          <p class="texto-literario">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          <div class="timeline-icon-extras">
+            <svg viewBox="0 0 60 40" class="city-svg" aria-hidden="true">
+              <path d="M0 40 L0 30 L10 30 L10 20 L20 20 L20 30 L30 30 L30 15 L40 15 L40 30 L50 30 L50 25 L55 25 L55 30 L60 30 L60 40 Z" fill="#2d2d2d" opacity="0.6"/>
+              <path d="M5 40 Q15 30 25 38 Q35 28 45 36 Q50 32 55 38" fill="none" stroke="#8b1a1a" stroke-width="0.8" opacity="0.4"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item left fade-slide" data-year="1996">
+        <div class="timeline-marker">
+          <svg viewBox="0 0 40 40" class="timeline-icon" aria-hidden="true">
+            <circle cx="20" cy="20" r="18" fill="none" stroke="#d4b87a" stroke-width="2"/>
+            <rect x="13" y="10" width="14" height="20" rx="2" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+            <path d="M16 15 L24 15" stroke="#d4b87a" stroke-width="1"/>
+            <text x="20" y="24" text-anchor="middle" fill="#cc4b2c" font-size="10" font-family="Inter">Dolor</text>
+          </svg>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-year">Dolor</div>
+          <h3>Sed Do — Eiusmod Tempor</h3>
+          <p class="texto-literario">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+          <div class="timeline-icon-extras">
+            <svg viewBox="0 0 60 40" class="city-svg" aria-hidden="true">
+              <rect x="20" y="5" width="20" height="35" rx="2" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.5"/>
+              <path d="M22 10 L38 10 M22 15 L38 15 M22 20 L38 20 M22 25 L38 25" stroke="#d4b87a" stroke-width="0.5" opacity="0.3"/>
+              <path d="M5 40 Q15 25 30 38 Q45 25 55 35" fill="none" stroke="#cc4b2c" stroke-width="0.8" opacity="0.3"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right fade-slide" data-year="1997">
+        <div class="timeline-marker">
+          <svg viewBox="0 0 40 40" class="timeline-icon" aria-hidden="true">
+            <circle cx="20" cy="20" r="18" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+            <path class="heart-path" d="M20 14 C20 14 14 10 14 16 C14 20 20 26 20 26 C20 26 26 20 26 16 C26 10 20 14 20 14Z" fill="none" stroke="#cc4b2c" stroke-width="1.5"/>
+            <text x="20" y="24" text-anchor="middle" fill="#d4b87a" font-size="10" font-family="Inter">Amet</text>
+          </svg>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-year">Amet</div>
+          <h3>Incididunt — Ut Labore Et Dolore</h3>
+          <p class="texto-literario">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus.</p>
+          <div class="timeline-icon-extras">
+            <svg viewBox="0 0 60 40" class="city-svg" aria-hidden="true">
+              <path d="M0 40 L0 20 L8 20 L8 10 L16 10 L16 20 L24 20 L24 0 L32 0 L32 20 L40 20 L40 15 L48 15 L48 20 L56 20 L56 30 L60 30 L60 40 Z" fill="#2d2d2d" opacity="0.6"/>
+              <circle cx="30" cy="5" r="3" fill="#d4b87a" opacity="0.3"/>
+              <circle cx="25" cy="8" r="1.5" fill="#d4b87a" opacity="0.2"/>
+              <circle cx="35" cy="7" r="2" fill="#d4b87a" opacity="0.2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== PERSONAGENS ===== -->
+  <section class="section fade-section" id="personagens">
+    <div class="container">
+      <h2 class="section-title">Lorem Ipsum</h2>
+      <p class="section-subtitle">Dolor sit amet consectetur adipiscing elit</p>
+
+      <div class="characters-grid">
+
+        <div class="char-card fade-slide">
+          <div class="char-icon">
+            <svg viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="30" r="14" fill="none" stroke="#d4b87a" stroke-width="2"/>
+              <path d="M18 70 Q30 55 40 60 Q50 55 62 70" fill="none" stroke="#d4b87a" stroke-width="2"/>
+              <path d="M35 35 L45 45 M45 35 L35 45" stroke="#cc4b2c" stroke-width="1.5" opacity="0.6"/>
+              <rect x="35" y="46" width="10" height="14" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Lorem</h3>
+          <span class="char-tag">Ipsum Dolor</span>
+          <p class="texto-literario">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+
+        <div class="char-card fade-slide">
+          <div class="char-icon">
+            <svg viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="28" r="14" fill="none" stroke="#8b1a1a" stroke-width="2"/>
+              <path d="M18 70 Q30 55 40 60 Q50 55 62 70" fill="none" stroke="#8b1a1a" stroke-width="2"/>
+              <path d="M25 40 L55 40" stroke="#8b1a1a" stroke-width="1.5" opacity="0.5"/>
+              <rect x="25" y="44" width="8" height="16" fill="none" stroke="#8b1a1a" stroke-width="1.5" opacity="0.5"/>
+              <rect x="47" y="44" width="8" height="16" fill="none" stroke="#8b1a1a" stroke-width="1.5" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Sit Amet</h3>
+          <span class="char-tag">Consectetur</span>
+          <p class="texto-literario">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+
+        <div class="char-card fade-slide">
+          <div class="char-icon">
+            <svg viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="28" r="14" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+              <path d="M18 70 Q30 50 40 55 Q50 50 62 70" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+              <path d="M32 32 Q40 38 48 32" fill="none" stroke="#cc4b2c" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Adipiscing Elit</h3>
+          <span class="char-tag">Sed Eiusmod</span>
+          <p class="texto-literario">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.</p>
+        </div>
+
+        <div class="char-card fade-slide">
+          <div class="char-icon">
+            <svg viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="28" r="14" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+              <path d="M18 70 Q30 52 40 58 Q50 52 62 70" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+              <path d="M28 40 L52 40" stroke="#cc4b2c" stroke-width="1.5"/>
+              <circle cx="32" cy="38" r="2" fill="#cc4b2c" opacity="0.5"/>
+              <circle cx="48" cy="38" r="2" fill="#cc4b2c" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Tempor</h3>
+          <span class="char-tag">Incididunt</span>
+          <p class="texto-literario">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+        </div>
+
+        <div class="char-card fade-slide">
+          <div class="char-icon">
+            <svg viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="28" r="14" fill="none" stroke="#d4b87a" stroke-width="2"/>
+              <path d="M18 70 Q30 48 40 56 Q50 48 62 70" fill="none" stroke="#d4b87a" stroke-width="2"/>
+              <path d="M30 30 Q40 25 50 30" fill="none" stroke="#d4b87a" stroke-width="1"/>
+              <path d="M35 36 L38 42 M45 36 L42 42" stroke="#d4b87a" stroke-width="1" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3>Labore</h3>
+          <span class="char-tag">Et Dolore</span>
+          <p class="texto-literario">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+        </div>
+
+        <div class="char-card fade-slide">
+          <div class="char-icon">
+            <svg viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="28" r="14" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+              <path d="M18 70 Q30 58 40 62 Q50 58 62 70" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+              <path d="M30 40 L50 40" stroke="#3a3a3a" stroke-width="1.5"/>
+              <circle cx="40" cy="20" r="2" fill="#d4b87a" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3>Magna Aliqua</h3>
+          <span class="char-tag">Ut Enim</span>
+          <p class="texto-literario">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum.</p>
+        </div>
+
+        <div class="char-card fade-slide">
+          <div class="char-icon">
+            <svg viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="28" r="14" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+              <path d="M18 70 Q30 60 40 64 Q50 60 62 70" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+              <path d="M28 35 L52 35" stroke="#3a3a3a" stroke-width="1.5"/>
+              <rect x="33" y="40" width="14" height="10" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3>Ad Minim Veniam</h3>
+          <span class="char-tag">Quis Nostrud</span>
+          <p class="texto-literario">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- ===== TEMAS ===== -->
+<section class="section fade-section" id="temas">
+  <div class="container">
+    <h2 class="section-title">Lorem Ipsum</h2>
+    <p class="section-subtitle">Dolor sit amet consectetur adipiscing</p>
+
+    <div class="temas-grid">
+
+      <div class="tema-card fade-slide">
+        <div class="tema-icon">
+          <svg viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="30" r="26" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+            <path d="M20 20 L40 40 M40 20 L20 40" stroke="#8b1a1a" stroke-width="2"/>
+            <circle cx="30" cy="30" r="8" fill="none" stroke="#8b1a1a" stroke-width="1.5" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Lorem Ipsum Dolor</h3>
+        <p class="texto-literario">Lorem ipsum dolor sit amet <em>consectetur adipiscing</em> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+
+      <div class="tema-card fade-slide">
+        <div class="tema-icon">
+          <svg viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="30" r="18" fill="none" stroke="#2d2d2d" stroke-width="2"/>
+            <path d="M20 20 L40 40" stroke="#d4b87a" stroke-width="2" opacity="0.6"/>
+            <path d="M24 18 L28 28 M36 32 L40 42" stroke="#d4b87a" stroke-width="1" opacity="0.4"/>
+            <circle cx="12" cy="12" r="3" fill="none" stroke="#8b1a1a" stroke-width="1.5" opacity="0.5"/>
+            <circle cx="48" cy="48" r="3" fill="none" stroke="#8b1a1a" stroke-width="1.5" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Sit Amet Consectetur</h3>
+        <p class="texto-literario">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+
+      <div class="tema-card fade-slide">
+        <div class="tema-icon">
+          <svg viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="30" r="26" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+            <rect x="18" y="10" width="24" height="18" rx="2" fill="none" stroke="#d4b87a" stroke-width="1.5" opacity="0.6"/>
+            <path d="M22 14 L38 14 M22 18 L38 18 M22 22 L30 22" stroke="#d4b87a" stroke-width="0.8" opacity="0.4"/>
+            <path d="M30 10 L30 6 M24 6 L36 6" stroke="#d4b87a" stroke-width="1.5"/>
+            <path d="M15 40 Q30 30 45 40" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Adipiscing Elit Sed</h3>
+        <p class="texto-literario">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.</p>
+      </div>
+
+      <div class="tema-card fade-slide">
+        <div class="tema-icon">
+          <svg viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="30" r="26" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+            <path d="M15 35 Q30 20 45 35" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+            <circle cx="20" cy="28" r="3" fill="#cc4b2c" opacity="0.4"/>
+            <circle cx="30" cy="24" r="3" fill="#cc4b2c" opacity="0.6"/>
+            <circle cx="40" cy="28" r="3" fill="#cc4b2c" opacity="0.4"/>
+            <path d="M30 38 L30 46 M26 42 L34 42" stroke="#cc4b2c" stroke-width="1.5" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Do Eiusmod Tempor Incididunt</h3>
+        <p class="texto-literario">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. At vero eos et accusamus.</p>
+      </div>
+
+    </div>
+
+    <!-- Dom Quixote SVG -->
+    <div class="quixote-container fade-slide">
+      <svg viewBox="0 0 200 280" class="quixote-svg" aria-label="Dom Quixote abstrato">
+        <!-- Body / Armor -->
+        <rect x="80" y="80" width="40" height="60" rx="4" fill="none" stroke="#d4b87a" stroke-width="2" opacity="0.7"/>
+        <rect x="75" y="90" width="10" height="30" rx="2" fill="none" stroke="#d4b87a" stroke-width="1.5" opacity="0.5"/>
+        <rect x="115" y="90" width="10" height="30" rx="2" fill="none" stroke="#d4b87a" stroke-width="1.5" opacity="0.5"/>
+        <!-- Head -->
+        <circle cx="100" cy="60" r="20" fill="none" stroke="#d4b87a" stroke-width="2"/>
+        <!-- Helmet / Mambrino's helmet -->
+        <ellipse cx="100" cy="45" rx="14" ry="8" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+        <!-- Legs -->
+        <line x1="90" y1="140" x2="85" y2="200" stroke="#d4b87a" stroke-width="2"/>
+        <line x1="110" y1="140" x2="115" y2="200" stroke="#d4b87a" stroke-width="2"/>
+        <line x1="85" y1="200" x2="80" y2="210" stroke="#d4b87a" stroke-width="1.5"/>
+        <line x1="115" y1="200" x2="120" y2="210" stroke="#d4b87a" stroke-width="1.5"/>
+        <!-- Lance -->
+        <g class="lance-group">
+          <line x1="130" y1="50" x2="180" y2="10" stroke="#cc4b2c" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="170" y1="4" x2="185" y2="12" stroke="#cc4b2c" stroke-width="1.5"/>
+          <line x1="170" y1="16" x2="185" y2="8" stroke="#cc4b2c" stroke-width="1.5"/>
+        </g>
+        <!-- Shield -->
+        <ellipse cx="70" cy="110" rx="10" ry="16" fill="none" stroke="#d4b87a" stroke-width="1.5" opacity="0.5" transform="rotate(-15 70 110)"/>
+        <!-- Windmill reference -->
+        <g class="windmill-ref" opacity="0.2">
+          <line x1="30" y1="140" x2="30" y2="210" stroke="#d4b87a" stroke-width="1"/>
+          <line x1="30" y1="140" x2="50" y2="130" stroke="#d4b87a" stroke-width="1"/>
+          <line x1="30" y1="140" x2="15" y2="125" stroke="#d4b87a" stroke-width="1"/>
+          <line x1="30" y1="140" x2="10" y2="145" stroke="#d4b87a" stroke-width="1"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== AUTOR ===== -->
+<section class="section fade-section" id="autor">
+  <div class="container">
+    <h2 class="section-title">Lorem Ipsum</h2>
+
+    <div class="autor-content fade-slide">
+      <div class="autor-photo">
+        <svg viewBox="0 0 200 240" class="autor-svg" aria-label="Retrato de Jeferson Tenório">
+          <!-- Background circle -->
+          <circle cx="100" cy="90" r="65" fill="none" stroke="#cc4b2c" stroke-width="2" opacity="0.3"/>
+          <!-- Head -->
+          <ellipse cx="100" cy="70" rx="28" ry="32" fill="none" stroke="#d4b87a" stroke-width="2"/>
+          <!-- Hair (afro) -->
+          <path d="M72 60 Q72 35 100 30 Q128 35 128 60" fill="none" stroke="#d4b87a" stroke-width="2"/>
+          <path d="M76 55 Q80 40 100 36 Q120 40 124 55" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.5"/>
+          <!-- Face details -->
+          <circle cx="90" cy="65" r="3" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+          <circle cx="110" cy="65" r="3" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+          <path d="M95 75 Q100 80 105 75" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+          <!-- Body / shoulders -->
+          <path d="M65 120 Q80 110 100 110 Q120 110 135 120" fill="none" stroke="#d4b87a" stroke-width="2"/>
+          <path d="M65 120 L55 160" stroke="#d4b87a" stroke-width="2"/>
+          <path d="M135 120 L145 160" stroke="#d4b87a" stroke-width="2"/>
+          <!-- Book in hands -->
+          <rect x="82" y="170" width="36" height="48" rx="3" fill="none" stroke="#cc4b2c" stroke-width="1.5" opacity="0.6"/>
+          <line x1="100" y1="170" x2="100" y2="218" stroke="#cc4b2c" stroke-width="1" opacity="0.6"/>
+          <rect x="72" y="178" width="8" height="12" rx="1" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.4"/>
+          <!-- Quill pen detail -->
+          <path d="M108 185 L120 175 L125 178 L112 190 Z" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.4"/>
+          <!-- Pensamento/letras flutuando -->
+          <text x="40" y="50" fill="#d4b87a" font-size="8" font-family="Inter" opacity="0.2" transform="rotate(-15 40 50)">lorem</text>
+          <text x="130" y="40" fill="#d4b87a" font-size="6" font-family="Inter" opacity="0.15" transform="rotate(10 130 40)">ipsum</text>
+          <text x="150" y="100" fill="#d4b87a" font-size="7" font-family="Inter" opacity="0.15" transform="rotate(-8 150 100)">dolor</text>
+        </svg>
+      </div>
+
+      <div class="autor-info">
+        <h3>Lorem Ipsum</h3>
+        <p class="texto-literario">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+        <p class="texto-literario">
+          <em>Lorem Ipsum Dolor</em> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <em>Reprehenderit In Voluptate</em> velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident.
+        </p>
+        <div class="autor-destaques">
+          <div class="destaque-item">
+            <span class="destaque-num">Lorem</span>
+            <span class="destaque-label">Ipsum dolor<br><em>Sit Amet Consectetur</em></span>
+          </div>
+          <div class="destaque-item">
+            <span class="destaque-num">Ipsum</span>
+            <span class="destaque-label">Adipiscing elit<br><em>Sed Do Eiusmod</em></span>
+          </div>
+          <div class="destaque-item">
+            <span class="destaque-num">Dolor</span>
+            <span class="destaque-label">Tempor incididunt<br>ut labore et dolore</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="footer-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod."</p>
+  </div>
+</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
